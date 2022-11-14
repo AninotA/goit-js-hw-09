@@ -11,13 +11,13 @@ startBtn.addEventListener('click', () => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
   startBtn.setAttribute('disabled', true);
-  startBtn.removeAttribute('disabled');
+  stopBtn.removeAttribute('disabled');
 });
 
 stopBtn.addEventListener('click', () => {
   clearInterval(timerId);
   //   console.log(stopBtn);
 //   console.log(`Interval with id ${timerId} has stopped!`);
-  startBtn.setAttribute('disabled', true);
+  stopBtn.setAttribute('disabled', true);
   startBtn.removeAttribute('disabled');
 });
